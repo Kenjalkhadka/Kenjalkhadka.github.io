@@ -1,385 +1,476 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenjal Khadka | Mechanical Engineering Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kenjal Khadka - Mechanical Engineering student at the University of Cincinnati. Explore my engineering projects, skills, and experience.">
+  <title>Kenjal Khadka | Mechanical Engineering Portfolio</title>
 
-    html {
-        scroll-behavior: smooth;
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111b2e;
+      --panel-light: #17243a;
+      --text: #e5edf8;
+      --muted: #9aabc2;
+      --blue: #60a5fa;
+      --border: #26364e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fb;
-        color: #172033;
-        line-height: 1.7;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
 
-    header {
-        background: #101d35;
-        color: white;
-        padding: 22px 8%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 15px;
+    a {
+      color: var(--blue);
+      text-decoration: none;
     }
 
-    header h2 {
-        font-size: 21px;
+    a:hover {
+      color: white;
     }
 
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 14px;
+    .sidebar {
+      position: fixed;
+      width: 250px;
+      height: 100vh;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      padding: 35px 25px;
     }
 
-    nav a:hover {
-        color: #65c7ff;
+    .sidebar h2 {
+      font-size: 21px;
+      margin-bottom: 8px;
     }
 
-    .hero {
-        background: linear-gradient(135deg, #101d35, #194b78);
-        color: white;
-        padding: 100px 8%;
-        text-align: left;
+    .sidebar .role {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 40px;
     }
 
-    .hero .label {
-        color: #8bd7ff;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 13px;
+    .sidebar nav a {
+      display: block;
+      color: var(--muted);
+      padding: 11px 12px;
+      margin: 5px 0;
+      border-radius: 6px;
     }
 
-    .hero h1 {
-        font-size: clamp(38px, 6vw, 65px);
-        line-height: 1.15;
-        margin: 20px 0;
+    .sidebar nav a:hover {
+      background: var(--panel-light);
+      color: var(--blue);
     }
 
-    .hero h1 span {
-        color: #75d0ff;
-    }
-
-    .hero p {
-        max-width: 650px;
-        color: #e0e9f5;
-        font-size: 17px;
-    }
-
-    .button {
-        display: inline-block;
-        background: #75d0ff;
-        color: #101d35;
-        padding: 12px 22px;
-        margin-top: 25px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
+    main {
+      margin-left: 250px;
+      max-width: 1150px;
+      padding: 65px 8%;
     }
 
     section {
-        padding: 70px 8%;
+      padding: 55px 0;
+      border-bottom: 1px solid var(--border);
     }
 
-    .section-title {
-        font-size: 30px;
-        color: #142b4c;
-        margin-bottom: 12px;
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
     }
 
-    .section-intro {
-        color: #596579;
-        max-width: 750px;
-        margin-bottom: 30px;
+    h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.2;
+      margin: 15px 0;
     }
 
-    .about-box {
-        background: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 5px 22px rgba(16, 29, 53, 0.06);
+    h2 {
+      font-size: 29px;
+      margin-bottom: 20px;
     }
 
-    .projects {
-        background: #eaf0f7;
+    h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
     }
 
-    .project-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 22px;
+    p {
+      color: var(--muted);
+      margin-bottom: 17px;
     }
 
-    .project-card {
-        background: white;
-        padding: 26px;
-        border-radius: 12px;
-        border-top: 4px solid #287bb5;
-        box-shadow: 0 5px 20px rgba(16, 29, 53, 0.05);
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .project-card h3 {
-        color: #163b63;
-        margin-bottom: 12px;
+    .hero .subtitle {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero .intro {
+      max-width: 700px;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid var(--blue);
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 12px 10px 0 0;
+    }
+
+    .button:hover {
+      background: var(--blue);
+      color: var(--bg);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 23px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--blue);
+      transform: translateY(-3px);
     }
 
     .tag {
-        display: inline-block;
-        background: #e2f3ff;
-        color: #155581;
-        padding: 4px 10px;
-        border-radius: 20px;
-        font-size: 12px;
-        margin-top: 15px;
+      display: inline-block;
+      background: var(--panel-light);
+      color: var(--blue);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin: 5px 3px 0 0;
     }
 
-    .status {
-        font-size: 13px;
-        color: #637188;
-        margin-top: 12px;
-        font-style: italic;
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        gap: 18px;
-    }
-
-    .skill-box {
-        background: white;
-        padding: 22px;
-        border-radius: 10px;
-    }
-
-    .skill-box h3 {
-        color: #1d5683;
-        margin-bottom: 8px;
-    }
-
-    .contact {
-        background: #101d35;
-        color: white;
-        text-align: center;
-    }
-
-    .contact .section-title {
-        color: white;
-    }
-
-    .contact p {
-        color: #d5dfed;
-    }
-
-    .contact a {
-        color: #75d0ff;
-        text-decoration: none;
+    .quote {
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 25px;
     }
 
     footer {
-        text-align: center;
+      padding: 35px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 750px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
         padding: 20px;
-        background: #0b1425;
-        color: #cbd5e1;
+      }
+
+      .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+      }
+
+      .sidebar nav a {
+        padding: 7px;
         font-size: 13px;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 30px 7%;
+      }
+
+      .hero {
+        min-height: 60vh;
+      }
     }
-
-    @media (max-width: 600px) {
-        header {
-            padding: 20px 5%;
-        }
-
-        nav a {
-            margin: 0 10px 0 0;
-        }
-
-        .hero {
-            padding: 70px 6%;
-        }
-
-        section {
-            padding: 50px 6%;
-        }
-    }
-</style>
-
+  </style>
 </head>
+
 <body>
 
-<header>
-    <h2>Kenjal Khadka</h2>
+  <aside class="sidebar">
+    <h2>KENJAL KHADKA</h2>
+    <p class="role">Mechanical Engineering Student</p>
+
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#why-engineering">Why Engineering?</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
-</header>
+  </aside>
 
-<section class="hero">
-    <p class="label">Mechanical Engineering Portfolio</p>
-    <h1>Designing Ideas.<br><span>Building Solutions.</span></h1>
-    <p>
-        I'm a Mechanical Engineering student at the University of Cincinnati
-        interested in mechanical design, aerospace systems, and propulsion.
-        I enjoy learning through hands-on projects and turning ideas into
-        practical engineering solutions.
-    </p>
-    <a class="button" href="#projects">Explore My Projects ↓</a>
-</section>
+  <main>
 
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-intro">
-        A curious learner building engineering skills through design,
-        technical projects, research, and collaboration.
-    </p>
-    <div class="about-box">
-        <p>
-            Originally from Nepal, I am pursuing a degree in Mechanical
-            Engineering at the University of Cincinnati. My interests
-            include engine design, aerospace systems, propulsion, and
-            mechanical component development.
-        </p>
-        <br>
-        <p>
-            Through engineering projects and student organizations, I am
-            developing my skills in CAD modeling, programming, fabrication,
-            and engineering analysis. I am always open to new opportunities
-            to learn, collaborate, and contribute to engineering projects.
-        </p>
-    </div>
-</section>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <span class="eyebrow">Meet the Engineer</span>
 
-<section class="projects" id="projects">
-    <h2 class="section-title">Engineering Projects</h2>
-    <p class="section-intro">
-        A selection of my engineering projects and hands-on technical work.
-        These sections will grow as the projects progress.
-    </p>
+      <h1>Hi, I'm <span style="color:var(--blue)">Kenjal Khadka.</span></h1>
 
-    <div class="project-grid">
+      <div class="subtitle">
+        Mechanical Engineering Student | University of Cincinnati
+      </div>
 
-        <article class="project-card">
-            <h3>Twin Turbo V6 Engine Design</h3>
-            <p>
-                Developing a three-dimensional engine model and assembly
-                in Siemens NX, with a focus on component geometry,
-                dimensions, and assembly integration.
-            </p>
-            <span class="tag">Siemens NX</span>
-            <p class="status">Status: In progress</p>
-        </article>
+      <p class="intro">
+        I'm passionate about mechanical design, engine development,
+        aerospace systems, and exploring the engineering behind
+        complex machines.
+      </p>
 
-        <article class="project-card">
-            <h3>Combustion Chamber Development</h3>
-            <p>
-                Exploring propulsion-related engineering calculations
-                and Python-based thermodynamic analysis to investigate
-                relevant design parameters and assumptions.
-            </p>
-            <span class="tag">Python · Propulsion</span>
-            <p class="status">Status: In progress</p>
-        </article>
+      <p class="intro">
+        I enjoy learning through hands-on projects, technical
+        problem-solving, and developing new skills. My goal is to
+        keep challenging myself, turn ideas into meaningful designs,
+        and grow as an engineer.
+      </p>
 
-        <div class="project-card">
-    <h3>Level 1 (L1) Rocket Construction</h3>
-    <p>
-        Participating in the construction of a Level 1 (L1)
-        certification rocket with the UC Rocketry Club.
-        Used OpenRocket to explore design parameters and
-        contributed to hands-on structural assembly,
-        including the nose cone and inner body tube.
-    </p>
-    <p><strong>Tools:</strong> OpenRocket, Manual Assembly</p>
-    <p><strong>Status:</strong> In Progress</p>
-</div>
-            </p>
-            <span class="tag">Structures · Fabrication</span>
-            <p class="status">Status: Ongoing</p>
-        </article>
+      <div>
+        <a href="#projects" class="button">Explore My Projects</a>
+        <a href="#about" class="button">More About Me</a>
+      </div>
+    </section>
 
-        <article class="project-card">
-            <h3>Propulsion Engineering</h3>
-            <p>
-                Participating in collaborative propulsion activities
-                involving technical research, combustion chamber
-                development, and engineering problem-solving.
-            </p>
-            <span class="tag">Research · Engineering</span>
-            <p class="status">Status: Ongoing</p>
-        </article>
+    <!-- ABOUT ME -->
+    <section id="about">
+      <span class="eyebrow">Get to Know Me</span>
+      <h2>About Me</h2>
 
-    </div>
-</section>
+      <p>
+        Originally from Nepal, I am pursuing a degree in Mechanical
+        Engineering at the University of Cincinnati. My interests
+        include engine design, aerospace systems, propulsion, and
+        mechanical component development.
+      </p>
 
-<section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <p class="section-intro">
-        Engineering tools and technical skills I am developing through
-        coursework, projects, and professional development.
-    </p>
+      <p>
+        I am a curious and determined learner who enjoys taking on
+        new challenges and learning from experience. I am always
+        open to new opportunities that allow me to grow, develop
+        my skills, and gain meaningful engineering experience.
+      </p>
+    </section>
 
-    <div class="skills-grid">
-        <div class="skill-box">
-            <h3>CAD & Design</h3>
-            <p>Siemens NX, SolidWorks, Onshape, AutoCAD</p>
+    <!-- WHY ENGINEERING -->
+    <section id="why-engineering">
+      <span class="eyebrow">My Motivation</span>
+      <h2>Why Mechanical Engineering?</h2>
+
+      <p>
+        My interest in Mechanical Engineering comes from my curiosity
+        about automobiles, engines, and the mechanisms that make
+        machines work. I have always been fascinated by how individual
+        components come together to create complex systems and how
+        engineering principles turn ideas into reality.
+      </p>
+
+      <p>
+        As I explored the field, my interests expanded beyond
+        automobiles into aerospace systems, propulsion, and mechanical
+        design. Through engineering projects and hands-on experiences,
+        I have been able to explore these interests and develop a
+        deeper understanding of the field.
+      </p>
+
+      <p>
+        For me, engineering is about curiosity, creativity,
+        problem-solving, and continuously improving ideas.
+      </p>
+
+      <div class="quote">
+        "With passion comes creativity. With creativity comes innovation."
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <span class="eyebrow">My Work</span>
+      <h2>Engineering Projects</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>Twin Turbo V6 Engine</h3>
+          <p>
+            Developing a detailed Twin Turbo V6 engine assembly
+            using Siemens NX, focusing on component modeling,
+            dimensional integration, and assembly development.
+          </p>
+          <span class="tag">Siemens NX</span>
+          <span class="tag">CAD Design</span>
+          <span class="tag">Mechanical Design</span>
         </div>
 
-        <div class="skill-box">
-            <h3>Programming & Analysis</h3>
-            <p>Python, MATLAB, LabVIEW</p>
+        <div class="card">
+          <h3>Combustion Chamber Project</h3>
+          <p>
+            Contributing to a team engineering project through
+            regenerative cooling heat-transfer modeling and
+            stress-analysis documentation.
+          </p>
+          <span class="tag">Heat Transfer</span>
+          <span class="tag">Engineering Analysis</span>
+          <span class="tag">Team Project</span>
         </div>
 
-        <div class="skill-box">
-            <h3>Engineering Tools</h3>
-            <p>OpenRocket, laser cutting, 3D scanning</p>
+        <div class="card">
+          <h3>Level 1 Rocket Build</h3>
+          <p>
+            Participating in the UC Rocketry Club structural
+            build, including nose cone and inner body tube work,
+            with OpenRocket used to explore design parameters.
+          </p>
+          <span class="tag">OpenRocket</span>
+          <span class="tag">Structures</span>
+          <span class="tag">Teamwork</span>
         </div>
 
-        <div class="skill-box">
-            <h3>Professional Skills</h3>
-            <p>Technical documentation, research, data analysis,
-            teamwork, and problem-solving</p>
+        <div class="card">
+          <h3>More Projects Coming Soon</h3>
+          <p>
+            More engineering, design, and hands-on projects
+            will be documented here as my experience grows.
+          </p>
+          <span class="tag">Continuous Learning</span>
         </div>
-    </div>
-</section>
 
-<section id="contact" class="contact">
-    <h2 class="section-title">Let's Connect</h2>
-    <p>
-        I'm interested in learning, collaborating, and exploring
-        opportunities in mechanical and aerospace engineering.
-    </p>
-    <p style="margin-top: 20px;">
-        LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Add your profile</a>
-    </p>
-    <p>
-        GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Add your profile</a>
-    </p>
-    <p>
-        Email: Add your professional email
-    </p>
-    <p>
-        Résumé: Coming soon
-    </p>
-</section>
+      </div>
+    </section>
 
-<footer>
-    <p>© 2026 Kenjal Khadka | Mechanical Engineering Portfolio</p>
-</footer>
+    <!-- SKILLS -->
+    <section id="skills">
+      <span class="eyebrow">My Toolkit</span>
+      <h2>Technical Skills</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>CAD & Design</h3>
+          <span class="tag">Siemens NX</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Onshape</span>
+          <span class="tag">AutoCAD</span>
+        </div>
+
+        <div class="card">
+          <h3>Programming & Analysis</h3>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Python</span>
+          <span class="tag">LabVIEW</span>
+        </div>
+
+        <div class="card">
+          <h3>Engineering Tools</h3>
+          <span class="tag">OpenRocket</span>
+          <span class="tag">Laser Cutting</span>
+          <span class="tag">3D Scanning</span>
+          <span class="tag">Technical Documentation</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <span class="eyebrow">Beyond the Classroom</span>
+      <h2>Experience & Development</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>UC Rocketry Club</h3>
+          <p>
+            Participating in structural team activities and
+            developing practical experience through rocket
+            construction and team collaboration.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Engineers Without Borders / CAS</h3>
+          <p>
+            Contributing to propulsion-related team work,
+            technical analysis, and engineering documentation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Technical Development</h3>
+          <p>
+            Developing skills through engineering workshops,
+            software training, programming courses, and
+            fabrication experiences.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <span class="eyebrow">Let's Connect</span>
+      <h2>Contact Me</h2>
+
+      <p>
+        I am always interested in connecting with fellow engineers,
+        learning from experienced professionals, and exploring
+        opportunities to grow.
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">
+          github.com/Kenjalkhadka
+        </a>
+      </p>
+
+      <p>
+        LinkedIn and email links will be added once confirmed.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Kenjal Khadka | Mechanical Engineering Portfolio
+    </footer>
+
+  </main>
 
 </body>
 </html>
+
+
+
