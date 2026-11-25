@@ -3,474 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kenjal Khadka - Mechanical Engineering student at the University of Cincinnati. Explore my engineering projects, skills, and experience.">
-  <title>Kenjal Khadka | Mechanical Engineering Portfolio</title>
-
-  <style>
-    :root {
-      --bg: #0b1120;
-      --panel: #111b2e;
-      --panel-light: #17243a;
-      --text: #e5edf8;
-      --muted: #9aabc2;
-      --blue: #60a5fa;
-      --border: #26364e;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: white;
-    }
-
-    .sidebar {
-      position: fixed;
-      width: 250px;
-      height: 100vh;
-      background: var(--panel);
-      border-right: 1px solid var(--border);
-      padding: 35px 25px;
-    }
-
-    .sidebar h2 {
-      font-size: 21px;
-      margin-bottom: 8px;
-    }
-
-    .sidebar .role {
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 40px;
-    }
-
-    .sidebar nav a {
-      display: block;
-      color: var(--muted);
-      padding: 11px 12px;
-      margin: 5px 0;
-      border-radius: 6px;
-    }
-
-    .sidebar nav a:hover {
-      background: var(--panel-light);
-      color: var(--blue);
-    }
-
-    main {
-      margin-left: 250px;
-      max-width: 1150px;
-      padding: 65px 8%;
-    }
-
-    section {
-      padding: 55px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    h1 {
-      font-size: clamp(36px, 5vw, 58px);
-      line-height: 1.2;
-      margin: 15px 0;
-    }
-
-    h2 {
-      font-size: 29px;
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: var(--muted);
-      margin-bottom: 17px;
-    }
-
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .hero .subtitle {
-      color: var(--blue);
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .hero .intro {
-      max-width: 700px;
-      font-size: 17px;
-    }
-
-    .button {
-      display: inline-block;
-      border: 1px solid var(--blue);
-      padding: 10px 20px;
-      border-radius: 6px;
-      margin: 12px 10px 0 0;
-    }
-
-    .button:hover {
-      background: var(--blue);
-      color: var(--bg);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      padding: 23px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      border-color: var(--blue);
-      transform: translateY(-3px);
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--panel-light);
-      color: var(--blue);
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 12px;
-      margin: 5px 3px 0 0;
-    }
-
-    .quote {
-      color: var(--blue);
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 25px;
-    }
-
-    footer {
-      padding: 35px 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 750px) {
-      .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-      }
-
-      .sidebar nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3px;
-      }
-
-      .sidebar nav a {
-        padding: 7px;
-        font-size: 13px;
-      }
-
-      main {
-        margin-left: 0;
-        padding: 30px 7%;
-      }
-
-      .hero {
-        min-height: 60vh;
-      }
-    }
-  </style>
+  <meta name="description" content="Kenjal Khadka's mechanical engineering portfolio, featuring CAD design, propulsion-related projects, rocketry, and technical development.">
+  <title>Kenjal Khadka | Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
-
 <body>
+  <div class="mobile-bar">
+    <button class="icon-button" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <a class="mobile-brand" href="index.html">KK<span>.</span></a>
+    <a class="mobile-github" href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
 
-  <aside class="sidebar">
-    <h2>KENJAL KHADKA</h2>
-    <p class="role">Mechanical Engineering Student</p>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#why-engineering">Why Engineering?</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Technical Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark">KK</span><span>KENJAL KHADKA<small>MECHANICAL ENGINEERING</small></span></a>
+    <div class="sidebar-rule"></div>
+    <div class="sidebar-label">PORTFOLIO</div>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="index.html"><span>⌂</span> Overview</a>
+      <a class="nav-link" href="#about"><span>◎</span> About</a>
+      <div class="nav-heading">ENGINEERING WORK</div>
+      <a class="nav-link" href="projects/twin-turbo-v6.html"><span>↗</span> Twin Turbo V6</a>
+      <a class="nav-link" href="projects/combustion-chamber.html"><span>↗</span> Combustion Chamber</a>
+      <a class="nav-link" href="projects/rocketry.html"><span>↗</span> Rocketry L1</a>
+      <a class="nav-link" href="#experience"><span>⌁</span> Team Experience</a>
+      <div class="nav-heading">BACKGROUND</div>
+      <a class="nav-link" href="#skills"><span>▦</span> Technical Skills</a>
+      <a class="nav-link" href="#development"><span>＋</span> Development</a>
+      <a class="nav-link" href="#contact"><span>✉</span> Contact</a>
     </nav>
+    <div class="sidebar-bottom">
+      <span class="availability-dot"></span>
+      <span>Building · Learning · Engineering</span>
+      <a href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">GitHub profile ↗</a>
+    </div>
   </aside>
 
-  <main>
-
-    <!-- HOME -->
-    <section id="home" class="hero">
-      <span class="eyebrow">Meet the Engineer</span>
-
-      <h1>Hi, I'm <span style="color:var(--blue)">Kenjal Khadka.</span></h1>
-
-      <div class="subtitle">
-        Mechanical Engineering Student | University of Cincinnati
+  <main class="main-content">
+    <header class="topbar">
+      <div class="breadcrumbs"><span>Portfolio</span><span class="crumb-slash">/</span><strong>Overview</strong></div>
+      <div class="topbar-actions">
+        <label class="search-wrap" for="site-search"><span>⌕</span><input id="site-search" type="search" placeholder="Search this portfolio..." autocomplete="off"><kbd> / </kbd></label>
+        <a class="top-link" href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
+      <div class="search-results" id="search-results" hidden></div>
+    </header>
 
-      <p class="intro">
-        I'm passionate about mechanical design, engine development,
-        aerospace systems, and exploring the engineering behind
-        complex machines.
-      </p>
-
-      <p class="intro">
-        I enjoy learning through hands-on projects, technical
-        problem-solving, and developing new skills. My goal is to
-        keep challenging myself, turn ideas into meaningful designs,
-        and grow as an engineer.
-      </p>
-
-      <div>
-        <a href="#projects" class="button">Explore My Projects</a>
-        <a href="#about" class="button">More About Me</a>
-      </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section id="about">
-      <span class="eyebrow">Get to Know Me</span>
-      <h2>About Me</h2>
-
-      <p>
-        I am pursuing a degree in Mechanical Engineering 
-        at the University of Cincinnati. My interests
-        include engine design, aerospace systems, propulsion,
-        and mechanical component development.
-      </p>
-
-      <p>
-        I am a curious and determined learner who enjoys taking on
-        new challenges and learning from experience. I am always
-        open to new opportunities that allow me to grow, develop
-        my skills, and gain meaningful engineering experience.
-      </p>
-    </section>
-
-    <!-- WHY ENGINEERING -->
-    <section id="why-engineering">
-      <span class="eyebrow">My Motivation</span>
-      <h2>Why Mechanical Engineering?</h2>
-
-      <p>
-        My interest in Mechanical Engineering comes from my curiosity
-        about automobiles, engines, and the mechanisms that make
-        machines work. I have always been fascinated by how individual
-        components come together to create complex systems and how
-        engineering principles turn ideas into reality.
-      </p>
-
-      <p>
-        As I explored the field, my interests expanded beyond
-        automobiles into aerospace systems, propulsion, and mechanical
-        design. Through engineering projects and hands-on experiences,
-        I have been able to explore these interests and develop a
-        deeper understanding of the field.
-      </p>
-
-      <p>
-        For me, engineering is about curiosity, creativity,
-        problem-solving, and continuously improving ideas.
-      </p>
-
-      <div class="quote">
-        "With passion comes creativity. With creativity comes innovation."
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <span class="eyebrow">My Work</span>
-      <h2>Engineering Projects</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>Twin Turbo V6 Engine</h3>
-          <p>
-            Developing a detailed Twin Turbo V6 engine assembly
-            using Siemens NX, focusing on component modeling,
-            dimensional integration, and assembly development.
-          </p>
-          <span class="tag">Siemens NX</span>
-          <span class="tag">CAD Design</span>
-          <span class="tag">Mechanical Design</span>
+    <div class="page-wrap">
+      <section class="hero" id="overview">
+        <div class="eyebrow"><span class="eyebrow-line"></span> MECHANICAL ENGINEERING PORTFOLIO</div>
+        <h1>Engineering ideas<br>into <span>real-world work.</span></h1>
+        <p class="hero-copy">I'm Kenjal Khadka, a Mechanical Engineering student at the University of Cincinnati interested in mechanical design, aerospace systems, and propulsion. This portfolio documents the projects, tools, and experiences shaping my engineering journey.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>↘</span></a>
+          <a class="button button-secondary" href="#about">About me</a>
         </div>
-
-        <div class="card">
-          <h3>Hephaestus| Liquid Bipropellant rocket Engine| Cincinnati aerospace Society </h3>
-          <p>
-            Contributing to a team rocket project (CH4/ LOx) through
-            regenerative cooling heat-transfer modeling and
-            stress-analysis documentation.
-          </p>
-          <span class="tag">Heat Transfer</span>
-          <span class="tag">Engineering Analysis</span>
-          <span class="tag">Team Project</span>
+        <div class="hero-meta">
+          <span><i></i> University of Cincinnati</span>
+          <span>Mechanical Engineering</span>
+          <span>Portfolio · 2026</span>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Level 1 Rocket Build</h3>
-          <p>
-            Participating in the UC Rocketry Club structural
-            build, including nose cone and inner body tube work,
-            with OpenRocket used to explore design parameters.
-          </p>
-          <span class="tag">OpenRocket</span>
-          <span class="tag">Structures</span>
-          <span class="tag">Teamwork</span>
+      <section class="content-section" id="about">
+        <div class="section-kicker">01 / INTRODUCTION</div>
+        <div class="section-heading-row">
+          <div><h2>About me</h2><p class="section-subtitle">A developing engineer focused on learning by designing, analyzing, and building.</p></div>
         </div>
-
-        <div class="card">
-          <h3>More Projects Coming Soon</h3>
-          <p>
-            More engineering, design, and hands-on projects
-            will be documented here as my experience grows.
-          </p>
-          <span class="tag">Continuous Learning</span>
+        <div class="about-panel">
+          <p>Originally from Nepal, I am pursuing a degree in Mechanical Engineering at the University of Cincinnati. My interests include engine design, aerospace systems, propulsion, and mechanical component development.</p>
+          <p>Through engineering projects and student organizations, I am developing skills in CAD modeling, programming, fabrication, technical documentation, and engineering analysis. I value collaborative problem-solving and learning through hands-on work.</p>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <span class="eyebrow">My Toolkit</span>
-      <h2>Technical Skills</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>CAD & Design</h3>
-          <span class="tag">Siemens NX</span>
-          <span class="tag">SolidWorks</span>
-          <span class="tag">Onshape</span>
-          <span class="tag">AutoCAD</span>
+      <section class="content-section" id="projects">
+        <div class="section-kicker">02 / SELECTED WORK</div>
+        <div class="section-heading-row">
+          <div><h2>Engineering projects</h2><p class="section-subtitle">A closer look at the work, process, and skills behind each project.</p></div>
+          <span class="section-count">03 PROJECTS</span>
         </div>
-
-        <div class="card">
-          <h3>Programming & Analysis</h3>
-          <span class="tag">MATLAB</span>
-          <span class="tag">Python</span>
-          <span class="tag">LabVIEW</span>
+        <div class="project-list">
+          <a class="project-row" href="projects/twin-turbo-v6.html">
+            <div class="project-number">01</div>
+            <div class="project-info"><div class="project-type">MECHANICAL DESIGN · CAD</div><h3>Twin Turbo V6 Engine Design</h3><p>Three-dimensional engine modeling and assembly development in Siemens NX, with attention to component geometry, dimensions, and integration.</p><div class="tag-list"><span>Siemens NX</span><span>3D Modeling</span><span>Assembly</span></div></div>
+            <div class="project-arrow">↗</div>
+          </a>
+          <a class="project-row" href="projects/combustion-chamber.html">
+            <div class="project-number">02</div>
+            <div class="project-info"><div class="project-type">PROPULSION · ENGINEERING ANALYSIS</div><h3>Combustion Chamber Project</h3><p>Collaborative propulsion project involving a regenerative cooling heat-transfer model, engineering assumptions, and structural analysis work for project documentation.</p><div class="tag-list"><span>Heat Transfer</span><span>Engineering Analysis</span><span>Documentation</span></div></div>
+            <div class="project-arrow">↗</div>
+          </a>
+          <a class="project-row" href="projects/rocketry.html">
+            <div class="project-number">03</div>
+            <div class="project-info"><div class="project-type">AEROSPACE · STRUCTURES</div><h3>Level 1 Rocket Construction</h3><p>Team participation in a Level 1 certification rocket project, including design-parameter exploration in OpenRocket and hands-on structural assembly.</p><div class="tag-list"><span>OpenRocket</span><span>Structures</span><span>Fabrication</span></div></div>
+            <div class="project-arrow">↗</div>
+          </a>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Engineering Tools</h3>
-          <span class="tag">OpenRocket</span>
-          <span class="tag">Laser Cutting</span>
-          <span class="tag">3D Scanning</span>
-          <span class="tag">Technical Documentation</span>
+      <section class="content-section" id="experience">
+        <div class="section-kicker">03 / COLLABORATION</div>
+        <h2>Team experience</h2>
+        <p class="section-subtitle">Learning engineering through student organizations and collaborative projects.</p>
+        <div class="experience-grid">
+          <article class="small-panel"><div class="panel-index">01</div><h3>UC Rocketry Club</h3><p>Structures team participation, design-parameter exploration, and hands-on rocket assembly.</p></article>
+          <article class="small-panel"><div class="panel-index">02</div><h3>Engineers Without Borders</h3><p>Propulsion-team collaboration on a combustion-chamber project and related engineering analysis.</p></article>
+          <article class="small-panel"><div class="panel-index">03</div><h3>Cincinnati Aerospace Society</h3><p>Participation in propulsion-focused planning, workshops, and collaborative project activities.</p></article>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <span class="eyebrow">Beyond the Classroom</span>
-      <h2>Experience & Development</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>UC Rocketry Club</h3>
-          <p>
-            Participating in structural team activities and
-            developing practical experience through rocket
-            construction and team collaboration.
-          </p>
+      <section class="content-section" id="skills">
+        <div class="section-kicker">04 / TOOLKIT</div>
+        <h2>Technical skills</h2>
+        <p class="section-subtitle">Tools and capabilities developed through coursework, projects, and training.</p>
+        <div class="skills-table">
+          <div><span>CAD & DESIGN</span><p>Siemens NX · SolidWorks · Onshape · AutoCAD</p></div>
+          <div><span>PROGRAMMING & ANALYSIS</span><p>Python · MATLAB · LabVIEW</p></div>
+          <div><span>ENGINEERING TOOLS</span><p>OpenRocket · Laser cutting · 3D scanning</p></div>
+          <div><span>PROFESSIONAL</span><p>Technical documentation · Research · Teamwork · Problem-solving</p></div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Engineers Without Borders / CAS</h3>
-          <p>
-            Contributing to propulsion-related team work,
-            technical analysis, and engineering documentation.
-          </p>
+      <section class="content-section" id="development">
+        <div class="section-kicker">05 / CONTINUOUS LEARNING</div>
+        <h2>Professional development</h2>
+        <div class="development-panel">
+          <div><span class="development-icon">01</span><div><h3>Manufacturing & digital fabrication training</h3><p>Laser cutting and 3D scanning training through the 1819 Innovation Hub.</p></div></div>
+          <div><span class="development-icon">02</span><div><h3>Programming & data analysis</h3><p>Continuing Python learning and technical skill development through online coursework.</p></div></div>
+          <div><span class="development-icon">03</span><div><h3>Systems engineering</h3><p>Professional development in systems engineering concepts and structured problem-solving.</p></div></div>
         </div>
+      </section>
 
-        <div class="card">
-          <h3>Technical Development</h3>
-          <p>
-            Developing skills through engineering workshops,
-            software training, programming courses, and
-            fabrication experiences.
-          </p>
-        </div>
+      <section class="contact-section" id="contact">
+        <div class="section-kicker">06 / GET IN TOUCH</div>
+        <h2>Let's connect.</h2>
+        <p>Interested in engineering, collaboration, and opportunities to keep learning and contributing.</p>
+        <div class="contact-links"><a href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">GitHub ↗</a><span class="contact-note">Add your LinkedIn and professional email before publishing.</span></div>
+      </section>
 
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <span class="eyebrow">Let's Connect</span>
-      <h2>Contact Me</h2>
-
-      <p>
-        I am always interested in connecting with fellow engineers,
-        learning from experienced professionals, and exploring
-        opportunities to grow.
-      </p>
-
-      <p>
-        GitHub:
-        <a href="https://github.com/Kenjalkhadka" target="_blank" rel="noopener">
-          github.com/Kenjalkhadka
-        </a>
-      </p>
-
-      <p>
-        LinkedIn and email links will be added once confirmed.
-      </p>
-    </section>
-
-    <footer>
-      © 2026 Kenjal Khadka | Mechanical Engineering Portfolio
-    </footer>
-
+      <footer><span>© 2026 Kenjal Khadka</span><span>Designed & documented with curiosity.</span></footer>
+    </div>
   </main>
-
 </body>
 </html>
-
-
-
