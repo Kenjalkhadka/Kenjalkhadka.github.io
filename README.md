@@ -24,9 +24,7 @@ Featured Projects:
 Technical Skills
 
 CAD software : Siemens NX, SolidWorks, Onshape, AutoCAD
-
 Programming : MATLAB, LabVIEW, OpenRocket, Python, HTML, CSS
-
 Documentation: Microsoft 365, Excel, Word, Adobe
 
 Education
