@@ -7,41 +7,44 @@ I am a Mechanical Engineering student at the University of Cincinnati with a int
 
 This repository hosts my personal engineering portfolio, showcasing my technical projects, design experience, engineering analysis, and professional development.
 
-Featured Projects
+Featured Projects:
 
-1. Twin Turbo V6 Engine Design
+1. Twin Turbo V6 Engine Design:
 
-Designed individual engine components, developed 3D models, and performed assembly integration using Siemens NX.
+   Designed individual engine components, developed 3D models, and performed assembly integration using Siemens NX.
 
-2. Hephaestus – Liquid Bipropellant Rocket Engine
+2. Hephaestus – Liquid Bipropellant Rocket Engine :
 
-Contributing to regenerative cooling heat-transfer analysis, structural stress analysis, Finite Element Analysis (FEA), and Preliminary Design Review (PDR) preparation.
+   Contributing to regenerative cooling heat-transfer analysis, structural stress analysis, Finite Element Analysis (FEA), and Preliminary Design Review (PDR) preparation.
 
-3. Level 1 (L1) High-Power Rocketry
+3. Level 1 (L1) High-Power Rocketry :
 
-Contributed to the physical construction and assembly of rocket structural components, with avionics integration to support onboard flight instrumentation and apogee measurement.
+   Contributed to the physical construction and assembly of rocket structural components, with avionics integration to support onboard flight instrumentation and apogee measurement.
 
 Technical Skills
 
-CAD & Design: Siemens NX, SolidWorks, Onshape, AutoCAD
+CAD software : Siemens NX, SolidWorks, Onshape, AutoCAD
 
-Engineering & Simulation: MATLAB, LabVIEW, OpenRocket
+Programming : MATLAB, LabVIEW, OpenRocket, Python, HTML, CSS
 
-Programming: Python, HTML, CSS
-
-Fabrication: Laser Cutting, 3D Scanning
-
-Documentation: Microsoft Office, Technical Documentation
+Documentation: Microsoft 365, Excel, Word, Adobe
 
 Education
 
 University of Cincinnati
 Bachelor of Science in Mechanical Engineering
+Class of 2030 
+
+Unted Academy 
+High School| Science ( Biology + Maths ) 
+Class of 2024
+
+Certification :
+Laser cutting, 3D scanning, UV cutting 
+
 
 Portfolio Website
-
 Explore my projects and engineering experience:
-
 https://kenjalkhadka.github.io/
 
 Engineering through design, analysis, and innovation.
