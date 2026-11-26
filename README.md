@@ -1,19 +1,47 @@
-# Kenjal Khadka — Engineering Portfolio
 
-A responsive portfolio website built with HTML, CSS, and JavaScript.
+Kenjal Khadka |  Engineering Portfolio
 
-## Preview locally
-1. Extract the ZIP file.
-2. Keep `index.html`, `css`, `js`, and `projects` together in the same folder.
-3. Open `index.html` in a browser.
+Welcome to my  portfolio!
 
-## Publish with GitHub Pages
-Upload the **contents** of this folder to the root of your `Kenjalkhadka.github.io` repository and commit to the `main` branch. Keep the folder structure intact.
+I am a Mechanical Engineering student at the University of Cincinnati with a interest in mechanical design, aerospace engineering, propulsion systems, and engineering development.
 
-## Customize
-- Main page content: `index.html`
-- Colors, layout, responsive styling: `css/style.css`
-- Search behavior: `js/main.js`
-- Project descriptions: files inside `projects/`
+This repository hosts my personal engineering portfolio, showcasing my technical projects, design experience, engineering analysis, and professional development.
 
-Replace the empty `mailto:` links with your preferred public contact email before publishing.
+Featured Projects
+
+1. Twin Turbo V6 Engine Design
+
+Designed individual engine components, developed 3D models, and performed assembly integration using Siemens NX.
+
+2. Hephaestus – Liquid Bipropellant Rocket Engine
+
+Contributing to regenerative cooling heat-transfer analysis, structural stress analysis, Finite Element Analysis (FEA), and Preliminary Design Review (PDR) preparation.
+
+3. Level 1 (L1) High-Power Rocketry
+
+Contributed to the physical construction and assembly of rocket structural components, with avionics integration to support onboard flight instrumentation and apogee measurement.
+
+Technical Skills
+
+CAD & Design: Siemens NX, SolidWorks, Onshape, AutoCAD
+
+Engineering & Simulation: MATLAB, LabVIEW, OpenRocket
+
+Programming: Python, HTML, CSS
+
+Fabrication: Laser Cutting, 3D Scanning
+
+Documentation: Microsoft Office, Technical Documentation
+
+Education
+
+University of Cincinnati
+Bachelor of Science in Mechanical Engineering
+
+Portfolio Website
+
+Explore my projects and engineering experience:
+
+https://kenjalkhadka.github.io/
+
+Engineering through design, analysis, and innovation.
