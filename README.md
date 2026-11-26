@@ -29,12 +29,12 @@ Documentation: Microsoft 365, Excel, Word, Adobe
 
 Education
 
-University of Cincinnati
-Bachelor of Science in Mechanical Engineering
+University of Cincinnati|
+Bachelor of Science in Mechanical Engineering|
 Class of 2030 
 
 Unted Academy 
-High School| Science ( Biology + Maths ) 
+High School| Science ( Biology + Maths ) |
 Class of 2024
 
 Certification :
